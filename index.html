@@ -4,77 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Art 74 Portfolio</title>
-  <style>
+  
+  <!-- Butterfly Kids font -->
+  <link href="https://fonts.googleapis.com/css?family=Butterfly+Kids" rel="stylesheet">
+
+    <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-image: url('IMG_4201.jpg');
+      background-position: center center;
+      background-size: cover;
+      font-family: 'Butterfly Kids', cursive;
+      font-size: 22px;
       margin: 0;
-      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+      max-width: 1000px;
+      width: 100%;
     }
 
     h1 {
-      text-align: center;
-      padding: 30px 0;
-      background-color: #0078d7;
-      color: white;
-      margin: 0;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .gallery a {
-      text-decoration: none;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      background-color: Plum;
+      color: #DDA0DD;
+      padding: 20px 30px;
       border-radius: 10px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 0 0 20px 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
 
-    .gallery img:hover {
+    p {
+      background-color: PowderBlue;
+      color: #B0E0E6;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-container {
+      width: 22%;
+      text-align: center;
+      color: #333;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .clickable-image {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      object-fit: cover;
+      height: 160px;
+      margin-bottom: 8px;
+    }
+
+    .clickable-image:hover {
       transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 900px) {
+      .image-container { width: 30%; }
+    }
+
+    @media (max-width: 600px) {
+      .image-container { width: 45%; }
+    }
+
+    @media (max-width: 400px) {
+      .image-container { width: 90%; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Art 74 Portfolio</h1>
+  <div class="content">
+    <h1>Welcome to my portfolio!</h1>
 
-  <div class="gallery">
-    <a href="glitchart.html" target="_blank">
-      <img src="bigcatcaracal.jpg" alt="Image 1">
-    </a>
-    <a href="glitchart.html" target="_blank">
-      <img src="bigcattiger.jpg" alt="Image 2">
-    </a>
-    <a href="glitchart.html" target="_blank">
-      <img src="bigcatlion copyglitch.png" alt="Image 3">
-    </a>
-    <a href="meme.html" target="_blank">
-      <img src="mememashupfinal.png" alt="Image 4">
-    </a>
-    <a href="logo design.html" target="_blank">
-      <img src="logo design.png" alt="Image 5">
-    </a>
-    <a href="3d.html" target="_blank">
-      <img src="art74desk.jpg" alt="Image 6">
-    </a>
-    <a href="virtual.html" target="_blank">
-      <img src="Screenshot 2025-10-27 225555.png" alt="Image 7">
-    </a>
-    <a href="netart.html" target="_blank">
-      <img src="cashier maddie.png" alt="Image 8">
+    <div class="image-grid">
+
+      <div class="image-container">
+        <a href="glitchart.html">
+          <img src="bigcatcaracal.jpg" alt="Glitch1" class="clickable-image">
+        </a>
+        <div>Glitch Art</div>
+      </div>
+
+      <div class="image-container">
+        <a href="glitchart.html">
+          <img src="bigcatlion copyglitch.png" alt="Glitch2" class="clickable-image">
+        </a>
+        <div>Glitch Art</div>
+      </div>
+
+      <div class="image-container">
+        <a href="glitchart.html">
+          <img src="bigcattiger.jpg" alt="Glitch3" class="clickable-image">
+        </a>
+        <div>Glitch Art</div>
+      </div>
+
+      <div class="image-container">
+        <a href="logo design.html">
+          <img src="logo design.png" alt="Logo" class="clickable-image">
+        </a>
+        <div>Logo Design</div>
+      </div>
+
+      <div class="image-container">
+        <a href="meme.html">
+          <img src="mememashupfinal.png" alt="Meme" class="clickable-image">
+        </a>
+        <div>Meme Mashup</div>
+      </div>
+
+      <div class="image-container">
+        <a href="virtual.html">
+          <img src="Screenshot 2025-10-27 225555.png" alt="Virtual" class="clickable-image">
+        </a>
+        <div>Virtual Space</div>
+      </div>
+
+      <div class="image-container">
+        <a href="3d.html">
+          <img src="art74desk.jpg" alt="3d Render" class="clickable-image">
+        </a>
+        <div>3d Render</div>
+      </div>
+
+      <div class="image-container">
+        <a href="netart.html">
+          <img src="cashier maddie.png" alt="Net Art" class="clickable-image">
+        </a>
+        <div>Net Art</div>
+      </div>
+
+    </div>
   </div>
 
 </body>
